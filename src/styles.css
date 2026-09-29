@@ -1,0 +1,34 @@
+:root {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #18324a;
+  background: #f2f8fb;
+  font-synthesis: none;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input { font: inherit; }
+.page-shell { width: min(1040px, calc(100% - 2rem)); margin: 0 auto; padding: 3rem 0 5rem; }
+header { max-width: 760px; }
+.eyebrow { color: #0d6ea6; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: .35rem 0 .75rem; }
+.inspector { display: flex; flex-wrap: wrap; gap: .6rem 1.2rem; margin: 2rem 0; padding: 1rem; background: #173b63; color: white; border-radius: .75rem; }
+.inspector strong { width: 100%; }
+.search { background: white; border: 1px solid #bed9e6; padding: 1.25rem; border-radius: .75rem; }
+.search label { display: block; font-weight: 800; margin-bottom: .5rem; }
+.search div { display: flex; gap: .7rem; }
+.search input { min-width: 0; flex: 1; border: 2px solid #9fc3d3; border-radius: .55rem; padding: .8rem; }
+button { border: 2px solid #0d6ea6; background: #0d6ea6; color: white; border-radius: .55rem; padding: .75rem 1.1rem; font-weight: 800; cursor: pointer; }
+input:focus-visible, button:focus-visible { outline: 4px solid #ffcc4d; outline-offset: 2px; }
+.course-list { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; margin-top: 1.4rem; }
+.course-list li { background: white; border: 1px solid #c4dce7; border-radius: .75rem; padding: 1.2rem; }
+.course-list p { color: #0d6ea6; font-weight: 800; margin: 0; }
+.course-list h2 { font-size: 1.25rem; margin: .5rem 0 1rem; }
+.course-list span { color: #587086; }
+.state-message { margin-top: 1.5rem; background: white; border-left: 6px solid #20a9d6; padding: 1.2rem; }
+.state-message.error { border-color: #b42335; color: #8a1524; }
+
+@media (max-width: 560px) {
+  .search div { flex-direction: column; }
+}
+
